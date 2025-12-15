@@ -1,23 +1,25 @@
 <script setup lang="ts">
-import AppHeader from "@/components/entities/header/AppHeader.vue";
+import Header from "@/components/entities/header/Header.vue";
 import Sidebar from "@/components/entities/sidebar/Sidebar.vue";
+import Editor from "@/components/entities/canvas/editor/Editor.vue";
+
 function onSelect(tool: any) {
   console.log("clicked", tool);
 }
 </script>
 
 <template>
-  <AppHeader />
-    <!-- page body -->
-  <div class="flex bg-[#f0f0f3] dark:bg-[#212225] pl-20 h-[calc(100vh-64px)]">
-    <!-- Sidebar sits fixed; you still need to keep main content offset by collapsed width -->
-    <Sidebar @select="onSelect" />
+  <div class="bg-background">
+    <Header />
+    <div class="flex bg-[#f0f0f3] dark:bg-[#212225] pl-20 h-[calc(100vh-64px)]">
+      <!-- Sidebar sits fixed; you still need to keep main content offset by collapsed width -->
+      <Sidebar @select="onSelect" />
 
-    <!-- main content: keep left padding equal to collapsed width (64px) -->
-    <main class="flex-1">
-      <h1>Main content</h1>
-      <p>When you hover sidebar, it expands overlaying this area — main doesn't move.</p>
-    </main>
+      <!-- main content: keep left padding equal to collapsed width (64px) -->
+      <main class="flex-1">
+        <Editor />
+      </main>
+    </div>
   </div>
 </template>
 

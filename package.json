@@ -17,15 +17,19 @@
     "@atlaskit/pragmatic-drag-and-drop-auto-scroll": "^2.1.2",
     "@atlaskit/pragmatic-drag-and-drop-flourish": "^2.0.9",
     "@atlaskit/pragmatic-drag-and-drop-hitbox": "^1.1.0",
+    "@nuxt/ui": "^4.2.1",
     "@tailwindcss/vite": "^4.1.17",
+    "@unhead/vue": "^2.0.19",
     "@vueuse/core": "^14.1.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.555.0",
+    "nanoid": "^5.1.6",
     "reka-ui": "^2.6.1",
     "tailwind-merge": "^3.4.0",
     "tailwindcss": "^4.1.17",
-    "vue": "^3.5.24"
+    "vue": "^3.5.24",
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
     "@types/node": "^24.10.1",
